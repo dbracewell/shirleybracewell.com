@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Barriecito&display=swap"
+         rel="stylesheet"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <style type="text/tailwindcss">
+         /* Optional: Add custom CSS or theme variables here */
+
+         .card {
+            @apply relative rounded-4xl  shadow-lg p-2 flex flex-col;
+            /* background-image: url("pink-background.jpg"); */
+            background-image: url("paper.jpg");
+            object-fit: none;
+            background-size: cover;
+            /* border: 2pt solid #938062; */
+            width: 400px;
+            height: 600px;
+         }
+
+         ul {
+            @apply list-disc list-inside;
+         }
+
+         ul li {
+            @apply mb-3;
+         }
+
+         .card .blurred {
+            @apply flex flex-1 flex-col rounded-3xl bg-white/50;
+            /* background-image: url("gradiant.png"); */
+            /* border: 2pt solid #ffc5cc; */
+            border: 1pt solid #8b7558;
+
+            filter: blur(4px);
+         }
+
+         .card .inner {
+            @apply absolute top-10 left-10 right-10 bottom-10 flex flex-col p-2 pt-10 rounded-4xl;
+            /* background-image: url("gradiant.png"); */
+         }
+
+         .inner h1 {
+            @apply text-3xl font-bold text-center;
+            font-family: "Barriecito";
+         }
+
+         .inner p {
+            @apply flex-1;
+         }
+
+         .card .pin {
+            @apply absolute top-0 left-1/2;
+            transform: translateX(-50%) translateY(-50%);
+         }
+
+         .card .tape {
+            @apply absolute top-0 left-1/2;
+            transform: translateX(-50%) translateY(-40%);
+         }
+
+         .blocktitle {
+            @apply w-full flex items-center justify-center text-3xl h-20 mb-5;
+            font-family: "Barriecito";
+            background-image: url("washi_tape.png");
+            background-size: cover;
+         }
+
+         .blockcontent {
+            @apply w-full bg-radial from-pink-50/50 to-pink-100/20 p-5 text-sm shadow-md rounded-3xl border border-gray-200 backdrop-blur-xs text-pink-950;
+            min-height: 675px;
+         }
+
+         body {
+            @apply space-y-6 p-5;
+         }
+
+         @theme {
+         }
+      </style>
+   </head>
+   <body style="background-image: url('background.jpg')">
+      <div class="flex flex-col items-center justify-center gap-4 pt-10">
+         <h1
+            class="font-bold text-5xl lg:text-7xl text-shadow-xs"
+            style="font-family: 'Barriecito'"
+         >
+            Shirley Bracewell
+         </h1>
+         <h4
+            class="text-2xl text-gray-600 font-medium"
+            style="font-family: 'Alex Brush'"
+         >
+            Leader · Student · Advocate
+         </h4>
+      </div>
+      <div class="hidden lg:block absolute top-10 left-20">
+         <img src="blue_flower.png" class="size-20" />
+      </div>
+      <div class="hidden lg:block absolute top-30 left-40">
+         <img src="pink_flower.png" class="size-20" />
+      </div>
+      <div class="hidden lg:block absolute top-30 right-20">
+         <img src="kawaii_star.png" class="size-40" />
+      </div>
+      <div
+         class="relative w-full max-w-6xl mx-auto flex flex-col lg:flex-row gap-4 items-center justify-center"
+         style="height: 800"
+      >
+         <img
+            src="self.png"
+            width="344"
+            height="502"
+            alt="Shirley"
+            class="inline-block"
+            style="object-fit: none"
+         />
+         <div
+            class="flex-1 flex flex-col bg-white/40 backdrop-blur-xs rounded border border-gray-300 my-auto shadow-md w-full p-2"
+            style="height: 400px; min-height: 400px"
+         >
+            Text
+         </div>
+      </div>
+      <div
+         class="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-15"
+         style="margin-top: 70px"
+      >
+         <div class="card">
+            <div class="blurred"></div>
+            <div class="inner">
+               <h1>
+                  Cognitive Distortions and Morals in the Context of Political
+                  Environments and Polarization
+               </h1>
+               <ul class="list-disc">
+                  <li>
+                     Investigated the presence and frequency of cognitive
+                     distortions among internet users
+                  </li>
+                  <li>
+                     Analyzed the relationship between individuals' cognitive
+                     distortions and their underlying moral frameworks
+                  </li>
+                  <li>
+                     Examined how moral values shift or polarize when
+                     individuals engage with politically charged content or
+                     environments
+                  </li>
+               </ul>
+            </div>
+            <div class="pin">
+               <img src="pin.png" style="height: 64px; width: auto" />
+            </div>
+         </div>
+         <div class="card">
+            <div class="blurred"></div>
+            <div class="inner"></div>
+            <div class="pin">
+               <img src="pin.png" style="height: 64px; width: auto" />
+            </div>
+         </div>
+         <div class="card">
+            <div class="blurred"></div>
+            <div class="inner"></div>
+            <div class="pin">
+               <img src="pin.png" style="height: 64px; width: auto" />
+            </div>
+         </div>
+      </div>
+      <div
+         class="w-full max-w-7xl mx-auto flex flex-col items-center lg:items-start lg:flex-row gap-15 p-5"
+         style="margin-top: 50px"
+      >
+         <div class="w-full lg:w-1/3">
+            <div class="blocktitle">Organizations</div>
+            <div class="blockcontent">
+               <b>Texas Youth and Government- Legislative Branch Bill Author</b>
+               <ul class="list-disc">
+                  <li>
+                     Drafted, sponsored, and presented original bills modeled
+                     after Texas state legislation
+                  </li>
+                  <li>
+                     Participated in committee hearings, floor debates, and
+                     legislative voting simulations
+                  </li>
+                  <li>
+                     Conducted research on current political and social issues
+                     to create realistic legislative proposals
+                  </li>
+                  <li>
+                     Collaborated with peers to negotiate amendments and reach
+                     bipartisan compromises
+                  </li>
+                  <li>
+                     Practiced parliamentary procedure and legislative writing
+                     consistent with Texas state standards
+                  </li>
+                  <li>
+                     Strengthened public speaking, debate, and critical thinking
+                     skills through live legislative sessions Mock Trial Expert
+                     Witness
+                  </li>
+                  <li>
+                     Served as expert witness in competitive mock trials,
+                     providing detailed testimony and analysis that strengthened
+                     case strategy.
+                  </li>
+                  <li>
+                     Analyzed legal evidence, interpreted complex case material,
+                     and delivered persuasive explanations to judges and juries.
+                  </li>
+                  <li>
+                     Mentored teammates on case preparation, legal procedures,
+                     and effective courtroom communication.
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="w-full lg:w-1/3">
+            <div class="blocktitle">Certifications</div>
+            <div class="blockcontent">
+               <ul class="list-disc">
+                  <li>Google Project Management</li>
+                  <li>
+                     Advanced Cardiovascular Life Support (ACLS) - American
+                     Heart Association
+                  </li>
+                  <li>WSI(Water Safety Instructor)</li>
+               </ul>
+            </div>
+         </div>
+         <div class="w-full lg:w-1/3">
+            <div class="blocktitle">Volunteer</div>
+            <div class="blockcontent">
+               <b>Volunteer, Living Stones Fellowship Church— 200+ Hours</b>
+               <ul class="list-disc">
+                  <li>
+                     Led children’s programming during a Rio Grande mission
+                     trip, delivering daily lessons and activities for groups of
+                     20–30 kids.
+                  </li>
+                  <li>
+                     Taught weekly Sunday children’s classes, creating simple
+                     lesson plans and managing classrooms of mixed ages.
+                  </li>
+                  <li>
+                     Served on the worship team, supporting weekly services
+                     through scheduled rehearsals, team coordination, and live
+                     performance.
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="w-full flex items-center justify-between flex gap-4">
+         <img
+            src="dice.png"
+            width="200"
+            height="133"
+            alt="Dice"
+            class="inline-block"
+         />
+         <img
+            src="star.png"
+            width="200"
+            height="200"
+            alt="Star"
+            class="inline-block"
+         />
+      </div>
+   </body>
+</html>
